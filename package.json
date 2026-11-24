@@ -1,0 +1,36 @@
+{
+  "name": "azur-promilia-api-archive",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Azur Promilia launcher API response archive",
+  "license": "AGPL-3.0-or-later",
+  "author": "daydreamer-json <atarakima1@icloud.com> (https://github.com/daydreamer-json)",
+  "type": "module",
+  "module": "src/main.ts",
+  "scripts": {
+    "archive": "bun src/main.ts archive",
+    "typecheck": "tsc --noEmit",
+    "lint": "oxlint src config",
+    "fmt": "oxfmt",
+    "fmt:output": "oxfmt output"
+  },
+  "dependencies": {
+    "ky": "^2.2.0",
+    "log4js": "^6.9.1",
+    "luxon": "^3.7.2",
+    "p-queue": "^9.3.3",
+    "yaml": "^2.9.0",
+    "yargs": "^18.1.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@tsconfig/bun": "^1.0.8",
+    "@tsconfig/strictest": "^2.0.8",
+    "@types/bun": "latest",
+    "@types/luxon": "^3.7.1",
+    "@types/yargs": "^17.0.35",
+    "oxfmt": "^0.80.0",
+    "oxlint": "^1.21.0",
+    "typescript": "^7.0.2"
+  }
+}
